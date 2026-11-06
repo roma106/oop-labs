@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\bin\Debug\net10.0\Lab4.Presentation.deps.json
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\bin\Debug\net10.0\Lab4.Presentation.dll
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\bin\Debug\net10.0\Lab4.Presentation.pdb
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\bin\Debug\net10.0\Lab4.Presentation.xml
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.AssemblyInfo.cs
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.sourcelink.json
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.dll
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\refint\Lab4.Presentation.dll
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.xml
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\Lab4.Presentation.pdb
+C:\Users\User\Desktop\c#\roma106_labs\src\lab-4\Lab4.Presentation\obj\Debug\net10.0\ref\Lab4.Presentation.dll

@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17449b3c_002D40bf_002D4595_002D962e_002D60f7320e31c2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ZeroSpeedTruck" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::90FF9D61-131D-D325-CE43-F9DF31EFBBAC::net10.0::Itmo.ObjectOrientedProgramming.Lab1.Tests.TruckTests.ZeroSpeedTruck&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90FF9D61-131D-D325-CE43-F9DF31EFBBAC::net10.0::Itmo.ObjectOrientedProgramming.Lab1.Tests.TruckTests.NegativeCapacityTruck&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::90FF9D61-131D-D325-CE43-F9DF31EFBBAC::net10.0::Itmo.ObjectOrientedProgramming.Lab1.Tests.StorageTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2bd25d87_002Dd13c_002D4400_002Daaa8_002D8bc1351426e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SuccessLoadAndUnload #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;90FF9D61-131D-D325-CE43-F9DF31EFBBAC/f:TruckTests.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e76d376a_002D04e6_002D4d61_002Da003_002Dd0b593c525b3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SuccessShipWork" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::90FF9D61-131D-D325-CE43-F9DF31EFBBAC::net10.0::Itmo.ObjectOrientedProgramming.Lab1.Tests.TimingTests.SuccessShipWork&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>
