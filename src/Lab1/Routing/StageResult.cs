@@ -12,7 +12,11 @@ public abstract record StageResult
 
     public sealed record StorageCantShip() : StageResult;
 
+    public sealed record StorageCantRecieve() : StageResult;
+
     public sealed record TruckCantLoad() : StageResult;
+
+    public sealed record TruckCantUnload() : StageResult;
 }
 
 public interface IRouteStage

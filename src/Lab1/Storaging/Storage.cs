@@ -9,7 +9,7 @@ public class Storage
 
     private readonly List<UnitAmount> _stock;
 
-    public IReadOnlyCollection<UnitAmount> Stock => _stock;
+    public IReadOnlyCollection<UnitAmount> Stock => _stock.ToArray();
 
     public Coordinates Coordinates { get; }
 
@@ -17,7 +17,7 @@ public class Storage
 
     private readonly List<Worker> _workers;
 
-    public IReadOnlyCollection<Worker> Workers => _workers;
+    public IReadOnlyCollection<Worker> Workers => _workers.ToArray();
 
     private void RemoveFromStock(UnitAmount unit)
     {
@@ -59,7 +59,7 @@ public class Storage
         public sealed record NoUnitsToRecieve() : RecieveResult;
     }
 
-    public RecieveResult Recieve(IReadOnlyCollection<UnitAmount> units)
+    public RecieveResult CheckRecieve(IReadOnlyCollection<UnitAmount> units)
     {
         ArgumentNullException.ThrowIfNull(units, nameof(units));
         if (units.Count == 0)
@@ -78,6 +78,18 @@ public class Storage
             return new RecieveResult.WorkersFailedToRecieve();
         }
 
+        return new RecieveResult.Success(success.WorkTime);
+    }
+
+    public RecieveResult Recieve(IReadOnlyCollection<UnitAmount> units)
+    {
+        RecieveResult result = CheckRecieve(units);
+
+        if (result is not RecieveResult.Success)
+        {
+            return result;
+        }
+
         foreach (UnitAmount unit in units)
         {
             int instock = _stock.FindIndex(u => u.Sku.Id == unit.Sku.Id);
@@ -91,7 +103,7 @@ public class Storage
             }
         }
 
-        return new RecieveResult.Success(success.WorkTime);
+        return result;
     }
 
     public abstract record ShipResult

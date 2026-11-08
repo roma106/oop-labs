@@ -8,7 +8,8 @@ public class RouteSheet
 
     public RouteSheet(IReadOnlyCollection<IRouteStage> stages)
     {
-        Stages = stages.ToList().AsReadOnly();
+        ArgumentNullException.ThrowIfNull(stages);
+        Stages = stages.ToList();
     }
 
     public abstract record RouteSheetResult

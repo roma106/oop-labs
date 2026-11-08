@@ -18,7 +18,7 @@ public class ShipStage : IRouteStage
         ArgumentNullException.ThrowIfNull(units, nameof(units));
 
         Storage = storage;
-        Units = units;
+        Units = units.ToArray();
     }
 
     public StageResult DoStage(Truck truck)

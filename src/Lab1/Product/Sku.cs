@@ -10,9 +10,11 @@ public class Sku
 
     public Sku(int id, string name, double size)
     {
+        ArgumentNullException.ThrowIfNullOrWhiteSpace(name);
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(id);
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(size, nameof(size));
         Id = id;
         Name = name;
-        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(size, nameof(size));
         Size = size;
     }
 }

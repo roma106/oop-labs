@@ -40,9 +40,9 @@ public class Truck
         }
     }
 
-    public IReadOnlyCollection<UnitAmount> LoadedUnits => _loadedUnits;
+    public IReadOnlyCollection<UnitAmount> LoadedUnits => _loadedUnits.ToArray();
 
-    public Truck(int cap, double speed, Coordinates coordinates)
+    public Truck(double cap, double speed, Coordinates coordinates)
     {
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(cap, nameof(cap));
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(speed, nameof(speed));
@@ -110,8 +110,10 @@ public class Truck
         public sealed record NoUnitsToUnload() : UnloadResult;
     }
 
-    public UnloadResult Unload(IReadOnlyCollection<UnitAmount> units)
+    public UnloadResult CheckUnload(IReadOnlyCollection<UnitAmount> units)
     {
+        ArgumentNullException.ThrowIfNull(units);
+
         if (units.Count == 0)
         {
             return new UnloadResult.NoUnitsToUnload();
@@ -122,12 +124,23 @@ public class Truck
             return new UnloadResult.InvalidQuantityForSomeUnits();
         }
 
+        return new UnloadResult.Success();
+    }
+
+    public UnloadResult Unload(IReadOnlyCollection<UnitAmount> units)
+    {
+        UnloadResult result = CheckUnload(units);
+        if (result is not UnloadResult.Success)
+        {
+            return result;
+        }
+
         foreach (UnitAmount unit in units)
         {
             RemoveFromLoaded(unit);
         }
 
-        return new UnloadResult.Success();
+        return result;
     }
 
     public double MoveTo(Coordinates dest)

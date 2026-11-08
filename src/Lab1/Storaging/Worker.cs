@@ -1,6 +1,4 @@
-﻿using Itmo.ObjectOrientedProgramming.Lab1.Product;
-
-namespace Itmo.ObjectOrientedProgramming.Lab1.Storaging;
+﻿namespace Itmo.ObjectOrientedProgramming.Lab1.Storaging;
 
 public class Worker
 {
